@@ -1,0 +1,128 @@
+header {
+    display: flex;
+    border: .1em solid rgba(131, 131, 131, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 12vh;
+    justify-content: space-between;
+    padding: 0 10em;
+    width: 100vw;
+
+    @media screen and (max-width: 960px) {
+        padding: 0 1em;
+        height: 10vh;
+    }
+
+    >.headerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: .1em solid rgba(131, 131, 131, 0.4);
+        border-left: .1em solid rgba(131, 131, 131, 0.4);
+        padding: 0 2em;
+        position: relative;
+
+        @media screen and (max-width: 960px) {
+            border: none;
+        }
+
+        >img {
+            @media screen and (max-width: 960px) {
+                width: 40vw;
+            }
+        }
+
+        >.leftTopBorder {
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: .5em;
+            height: .5em;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+        }
+
+        >.rightTopBorder {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: .5em;
+            height: .5em;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+        }
+
+        >.rightBottomBorder {
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: .5em;
+            height: .5em;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+        }
+
+        >.leftBottomBorder {
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            width: .5em;
+            height: .5em;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+        }
+
+        >h4 {
+            font-size: 3em;
+        }
+    }
+
+    >.headerCategories {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+
+        @media screen and (max-width: 960px) {
+            display: none;
+        }
+
+        >p {
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-offset: 8px;
+                text-decoration-color: rgba(255, 255, 255, 0.7);
+                opacity: .7;
+            }
+        }
+    }
+
+    >.headerButton {
+        display: none;
+
+        @media screen and (max-width: 960px) {
+            display: flex;
+            align-items: center;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+}
