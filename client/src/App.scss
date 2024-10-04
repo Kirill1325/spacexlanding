@@ -15,11 +15,11 @@ html {
         >#root {
             height: 100%;
             background-color: rgb(25, 39, 52);
-            background-image: url('./assets/bg.jpg');
+            background-image: url('./assets/bg1.jpg');
             background-size: cover;
 
-            @media screen and (max-width: 960px) {
-                background-image: url('./assets/bg.png');
+            @media screen and (max-width: 676px) {
+                background-image: url('./assets/space.jpg');
             }
 
             >.App {
@@ -29,9 +29,9 @@ html {
                     height: 88vh;
                     display: flex;
                     justify-content: space-between;
-                    padding: 4em 10em 0;
+                    padding: 6em 10em 0;
 
-                    @media screen and (max-width: 960px) {
+                    @media screen and (max-width: 676px) {
                         padding: 0;
                         flex-direction: column;
                         align-items: center;
@@ -41,7 +41,7 @@ html {
                     >.text {
                         display: none;
 
-                        @media screen and (max-width: 960px) {
+                        @media screen and (max-width: 676px) {
                             display: block;
                             width: 80vw;
                             text-align: center;
@@ -60,7 +60,7 @@ html {
                         >h1 {
                             font-size: 3.5em;
 
-                            @media screen and (max-width: 960px) {
+                            @media screen and (max-width: 676px) {
                                 font-size: 2em;
                             }
                         }
@@ -72,6 +72,7 @@ html {
 
                     >.button {
                         position: relative;
+                        top: 44%;
                         width: 12em;
                         height: 2em;
 

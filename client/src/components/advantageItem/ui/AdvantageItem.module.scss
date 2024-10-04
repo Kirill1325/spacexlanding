@@ -2,13 +2,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1 0 45%;
+
+    >.advantageContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >h5 {
+            font-size: 3.5em;
+            font-weight: 600;
+            opacity: .7;
+        }
+
+        >p {
+            // font-size: ;
+            opacity: .7;
+            margin-bottom: 1em;
+        }
+    }
 
     &:nth-child(1) {
         background: linear-gradient(135deg, rgba(229, 84, 0, 0) 50%, rgba(255, 255, 255, 0.05) 100%);
 
         position: relative;
+        // align-items: flex-start;
 
         &:hover {
             background: rgb(255, 255, 255);
@@ -41,6 +60,7 @@
         background: linear-gradient(225deg, rgba(229, 84, 0, 0) 50%, rgba(255, 255, 255, 0.05) 100%);
 
         position: relative;
+        align-items: flex-end;
 
         &:hover {
             background: rgb(255, 255, 255);
@@ -105,6 +125,7 @@
         background: linear-gradient(315deg, rgba(229, 84, 0, 0) 50%, rgba(255, 255, 255, 0.05) 100%);
 
         position: relative;
+        align-items: flex-end;
 
         &:hover {
             background: rgb(255, 255, 255);
@@ -132,17 +153,7 @@
         }
     }
 
-    >h5 {
-        font-size: 3.5em;
-        font-weight: 600;
-        opacity: .7;
-    }
 
-    >p {
-        // font-size: ;
-        opacity: .7;
-        margin-bottom: 1em;
-    }
 
 
 }
